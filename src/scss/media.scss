@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*specification */
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.item_bg_color {
+    background-color: #ccc8b6;
+}
+.item_bg_color_another {
+    background: #f2efe5;
+}
+a {
+    text-decoration: none !important;
+}
+/*end specification */
+@media screen and (min-width:600px) {
+    p,a,blockquote,li {
+        font-size: 18px;
+    }
+    .headline {
+        padding: 2%;
+        h2 {
+            padding: 0 0 3%;
+        }
+    }
+    .hero_section {
+        position: relative;
+        background: url(../../images/header/bg3.jpg) no-repeat top / cover;
+        padding-bottom: 15%;
+            .logo {
+                h1 {
+                    font-size: 80px !important;
+                }
+                img {
+                    width: 300px;
+                    height: 200px;
+                }
+            }    
+            #mobileMenu {
+                display: none;
+            }
+            .hero_section_button {
+                padding: 10% 0 !important;
+            }
+            .desktopMenu {
+                position: fixed;
+                top: 10px;
+                z-index: 5;
+                    ul {
+                            li {
+                                list-style: none;
+                                margin-left: 29%;
+                                    a {
+                                        color: black;
+                                        font-weight: 500;
+                                    }
+                            }
+                    }
+            }
+            .desktopMenu a:hover {
+                // border-bottom: 1px solid black;
+                color: white !important;
+                background: #7a7a76;
+            }
+    }
+    .section_about {
+        padding-bottom: 0;
+            .section_about_mobile {
+                display: none;
+            }
+            .section_about_content_desktop {
+                display: flex;
+                    .section_about_content_text{
+                        text-align: center;
+                        margin-top: 10%;
+                        padding: 0 7%;
+                    }
+                        .img_item {
+                            img {
+                                width: 700px;
+                            }
+                        }
+            }
+    }
+    .block_with_images {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-template-rows: 250px 250px;
+
+            .block_with_images_item {
+                img {
+                    width: 270px;
+                    height: 250px;
+                }
+            }
+    }
+    .assortment {
+        .assortment_content {
+            padding: 3%;
+        }
+    }
+    .advantages_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 5% 0;
+    }
+    .contacts {
+        .contacts_container {
+            display: flex;
+            justify-content: space-around;
+            padding: 3%;
+                .contacts_block_contacts li {
+                    line-height: 2rem;
+                }
+                .contacts_block_contacts li:last-child {
+                    display: inline;
+                }
+                .contacts_block_contacts li:first-child {
+                    display: inline;
+                }
+        }
+    }
+}
+@media screen and (max-width:600px) {
+    .desktopMenu {
+        display: none;
+    }
+    .section_about_content_desktop {
+        display: none;
+    }
+    .block_with_images {
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .img_item {
+        img {
+            width: 450px !important;
+            height: 396px;
+        }
+    }
+    .block_with_images {
+        display: none;
+    }
+}
+@media screen and (min-width:1300px){
+    .assortment_content_desktop {
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 50% 50%;
+        .assortment_content_desktop_item {
+            img {
+                width: 449px;
+            }
+            h3 {
+                margin: 20% 0;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                padding: 0 10%;
+            }
+        }
+    }
+    .assortment_content {
+        display: none;
+    }
+}
+@media screen and (max-width:1300px) {
+    .assortment_content_desktop {
+        display: none;
+    }
+    #time {
+        display: none;
+    }
+}
+    
+
+
+
+
+
+
